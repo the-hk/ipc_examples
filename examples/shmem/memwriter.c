@@ -33,7 +33,7 @@ int main() {
   fprintf(stderr, "shared mem address: %p [0..%d]\n", memptr, ByteSize - 1);
   fprintf(stderr, "backing file:       /dev/shm%s\n", BackingFile );
 
-  /* semahore code to lock the shared mem */
+  /* semaphore code to lock the shared mem */
   sem_t* semptr = sem_open(SemaphoreName, /* name */
 			   O_CREAT,       /* create the semaphore */
 			   AccessPerms,   /* protection perms */
