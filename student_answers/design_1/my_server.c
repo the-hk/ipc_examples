@@ -84,6 +84,7 @@ int main(){
         valueold = value;
         while(valueold == value){
             sem_getvalue(semptr, &value);
+            sleep(0.1);
         }
     }
 
