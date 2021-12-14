@@ -1,6 +1,6 @@
 all:
-	gcc -o myserver.o my_server.c -lpthread
-	gcc -o client.o client.c -lpthread
+	gcc -o myserver.o my_server.c -lpthread -lrt
+	gcc -o client.o client.c -lpthread -lrt
 runserver:
 		  ./myserver.o	
 runclient:
