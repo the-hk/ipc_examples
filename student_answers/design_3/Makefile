@@ -1,15 +1,6 @@
-TARGET_01        = client
-SOURCE_01        = client.c
-
-CC = gcc
-CFLAGS = -Wall -g3 -gdwarf-2 -DDEBUG
-
-.PHONY: all
-all: $(TARGET_01) $(TARGET_02)
-
-$(TARGET_01): $(SOURCE_01)
-
-
-.PHONY: clean
+all:
+	gcc -o myserver.o my_server.c -lpthread
+runserver:
+		  ./myserver.o	
 clean:
-	rm $(TARGET_01) $(OBJS)
+	  rm *.o

@@ -13,6 +13,9 @@ void report_and_exit(const char* msg) {
 }
 
 int main() {
+  char buffer[100];
+  char name [20];
+  char chr_final[120];
   int pipeFDs[2]; /* two file descriptors */
   char buf;       /* 1-byte buffer */
   const char* msg = "Nature's first green is gold\n"; /* bytes to write */
