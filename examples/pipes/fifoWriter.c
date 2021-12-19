@@ -24,7 +24,7 @@ int main() {
       int k;
       int chunk[IntsPerChunk];
       for (k = 0; k < IntsPerChunk; k++) 
-	chunk[k] = rand();             
+	    chunk[k] = rand();             
       write(fd, chunk, sizeof(chunk)); 
     }
     usleep((rand() % MaxZs) + 1);           /* pause a bit for realism */

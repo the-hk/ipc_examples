@@ -37,8 +37,8 @@ int main() {
 			   AccessPerms,   /* protection perms */
 			   0);            /* initial value */
   if (semptr == (void*) -1) report_and_exit("sem_open");
-  printf("what is my name? = \n");
-  scanf("%s",name);
+    printf("what is my name? = \n");
+    scanf("%s",name);
   while(1){
     printf("-->");
     memset(chr_final, 0, 120);
